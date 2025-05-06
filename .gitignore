@@ -1,0 +1,26 @@
+# Python virtual environment
+env/
+venv/
+
+# Python cache and logs
+__pycache__/
+*.py[cod]
+*.sqlite3
+
+# Django-related
+*.log
+*.pot
+*.pyc
+db.sqlite3
+media/
+staticfiles/
+
+# Node modules (React frontend)
+frontend/node_modules/
+frontend/.env
+
+# Mac system files
+.DS_Store
+
+# VS Code settings
+.vscode/
