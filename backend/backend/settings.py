@@ -55,9 +55,20 @@ MIDDLEWARE = [
 CORS_ALLOW_ALL_ORIGINS = True
 # Allow frontend origin
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
+    "http://localhost:3001","http://localhost:3000",
 ]
+# Add your custom API key
+# MY_API_KEY = 'my-super-secret-key-123'
 
+# # DRF Throttling config
+# REST_FRAMEWORK = {
+#     'DEFAULT_THROTTLE_CLASSES': [
+#         'rest_framework.throttling.AnonRateThrottle',
+#     ],
+#     'DEFAULT_THROTTLE_RATES': {
+#         'anon': '30/hour',  # Change as needed
+#     }
+# }
 
 
 MIDDLEWARE.insert(0, 'corsheaders.middleware.CorsMiddleware')
